@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)https://dird.rsmb.co.id/demoinvetoriapp/index -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+         
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">        
+        <!-- Tell the browser to be responsive to screen width -->         
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"> 
+        <!-- Bootstrap 3.3.6 -->         
+        <link rel="stylesheet" href="./halaman utama_files/bootstrap.min.css"> 
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="./halaman utama_files/font-awesome.min.css">
+		<!-- Ionicons -->
+		<link rel="stylesheet" href="./halaman utama_files/ionicons.min.css">
+        <!-- Theme style -->         
+        <link rel="stylesheet" href="./halaman utama_files/AdminLTE.min.css"> 
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->         
+        <link rel="stylesheet" href="./halaman utama_files/_all-skins.min.css"> 
+        <!-- iCheck -->         
+        <link rel="stylesheet" href="./halaman utama_files/blue.css"> 
+		<link rel="stylesheet" href="./halaman utama_files/all.css">
+        <!-- Morris chart -->         
+        <link rel="stylesheet" href="./halaman utama_files/morris.css"> 
+        <!-- jvectormap -->         
+        <link rel="stylesheet" href="./halaman utama_files/jquery-jvectormap-1.2.2.css"> 
+        <!-- Date Picker -->         
+        <link rel="stylesheet" href="./halaman utama_files/datepicker3.css"> 
+        <!-- Daterange picker -->         
+        <link rel="stylesheet" href="./halaman utama_files/daterangepicker.css"> 
+        <!-- bootstrap wysihtml5 - text editor -->         
+        <link rel="stylesheet" href="./halaman utama_files/bootstrap3-wysihtml5.min.css"> 
+		<!-- DataTables -->
+		<link rel="stylesheet" href="./halaman utama_files/dataTables.bootstrap.css">
+		
+		<link rel="stylesheet" href="./halaman utama_files/select2.min.css">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->         
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->         
+        <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]--> 
+  
+  <style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style></head>
+<body class="skin-custom-light fixed sidebar-mini wysihtml5-supported"> 
+
+<div class="wrapper">
+	<header class="main-header">
+        <title>Aplikasi Inventori</title>
+                <!-- Logo -->
+                <tag class="logo">
+                    <!-- mini logo for sidebar mini 50x50 pixels -->
+                    <span class="logo-mini"><b></b></span>
+                    <!-- logo for regular state and mobile devices -->
+                 <span class="logo-lg"><b>Aplikasi Inventori</b></span>
+                </tag>
+                <!-- Header Navbar: style can be found in header.less -->
+                <nav class="navbar navbar-static-top">
+                    <!-- Sidebar toggle button-->
+                    <a href="https://dird.rsmb.co.id/demoinvetoriapp/index#" class="sidebar-toggle" data-toggle="offcanvas" role="button"> <span class="sr-only">Toggle navigation</span> </a>
+                    <div class="navbar-custom-menu">
+                        <ul class="nav navbar-nav">
+                            <!-- User Account: style can be found in dropdown.less -->
+                            <li class="dropdown user user-menu">
+                                <a href="https://dird.rsmb.co.id/demoinvetoriapp/index#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <img src="./halaman utama_files/index.jpg" class="user-image" alt="User Image">
+                                    <span class="hidden-xs"> Administrator</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <!-- User image -->
+                                    <li class="user-header">
+                                        <img src="./halaman utama_files/index.jpg" class="img-circle" alt="User Image">
+                                        <p>
+                  Administrator - admin</p>
+                                    </li>
+                                    
+                                    <!-- Menu Footer-->
+                                    <li class="user-footer">
+                                        <div class="pull-left">
+                                              <a href="https://dird.rsmb.co.id/demoinvetoriapp/add_admin?no=26" class="btn btn-default btn-flat">Profil</a>
+                                        </div>
+                                        <div class="pull-right">
+                                            <a href="https://dird.rsmb.co.id/demoinvetoriapp/logout?logout=1" class="btn btn-default btn-flat">Keluar</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- Control Sidebar Toggle Button -->
+                            <li>
+</li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+ <aside class="main-sidebar">
+
+                <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 560px;"><section class="sidebar" style="height: 560px; overflow: hidden; width: auto;">
+                    <!-- Sidebar user panel -->
+                    <div class="user-panel">
+                        <div class="pull-left image">
+                            <img src="./halaman utama_files/index.jpg" class="img-circle" alt="User Image">
+                        </div>
+                        <div class="pull-left info">
+                            <p>Administrator</p>
+                            <a href="https://dird.rsmb.co.id/demoinvetoriapp/index#"><i class="fa fa-circle text-online"></i> Online</a>
+                        </div>
+                    </div>
+<br>
+                             <ul class="sidebar-menu">
+                       <!-- <li class="header">MENU UTAMA</li> -->
+                        <li class="treeview">
+                            <a href="https://dird.rsmb.co.id/demoinvetoriapp/index"> <i class="fa fa-dashboard"></i> <span>Halaman Utama</span> </a>
+
+                        </li>
+
+
+
+
+                        <li class="treeview">
+                            <a href="https://dird.rsmb.co.id/demoinvetoriapp/index#"> <i class="glyphicon glyphicon-user"></i> <span>Admin</span> <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i> </span> </a>
+               <ul class="treeview-menu">
+                                <li>
+                                    <a href="https://dird.rsmb.co.id/demoinvetoriapp/admin"><i class="fa fa-circle-o"></i>Data Admin</a>
+                                </li>
+<li>
+                                    <a href="https://dird.rsmb.co.id/demoinvetoriapp/add_admin"><i class="fa fa-circle-o"></i>Tambah Admin</a>
+                                                  </li>
+                            </ul>
+                        </li>
+
+
+                        <li class="treeview">
+                            <a href="https://dird.rsmb.co.id/demoinvetoriapp/index#"> <i class="glyphicon glyphicon-folder-close"></i> <span>Supplier</span> <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i> </span> </a>
+               <ul class="treeview-menu">
+                                <li>
+                                    <a href="https://dird.rsmb.co.id/demoinvetoriapp/supplier"><i class="fa fa-circle-o"></i>Data Supplier</a>
+                                </li>
+<li>
+                                    <a href="https://dird.rsmb.co.id/demoinvetoriapp/add_supplier"><i class="fa fa-circle-o"></i>Tambah Supplier</a>
+                                                  </li>
+                            </ul>
+                        </li>
+
+                        <!-- customer start -->
+                            <li class="treeview">
+                            <a href="https://dird.rsmb.co.id/demoinvetoriapp/index#"> <i class="glyphicon glyphicon-folder-close"></i> <span>Customer</span> <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i> </span> </a>
+               <ul class="treeview-menu">
+                                <li>
+                                    <a href="https://dird.rsmb.co.id/demoinvetoriapp/customer"><i class="fa fa-circle-o"></i>Data Customer</a>
+                                </li>
+<li>
+                                    <a href="https://dird.rsmb.co.id/demoinvetoriapp/add_customer"><i class="fa fa-circle-o"></i>Tambah Customer</a>
+                                                  </li>
+                            </ul>
+                        </li>
+
+                        <!-- customer end -->
+
+
+                        <li class="treeview">
+                            <a href="https://dird.rsmb.co.id/demoinvetoriapp/index#"> <i class="glyphicon glyphicon-tag"></i> <span>Kategori</span> <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i> </span> </a>
+               <ul class="treeview-menu">
+                                <li>
+                                    <a href="https://dird.rsmb.co.id/demoinvetoriapp/kategori"><i class="fa fa-circle-o"></i>Data Kategori</a>
+                                </li>
+<li>
+                                    <a href="https://dird.rsmb.co.id/demoinvetoriapp/add_kategori"><i class="fa fa-circle-o"></i>Tambah Kategori</a>
+                                                  </li>
+                            </ul>
+                        </li>
+
+                        <!-- satuan start -->
+                        <li class="treeview">
+                            <a href="https://dird.rsmb.co.id/demoinvetoriapp/index#"> <i class="glyphicon glyphicon-tag"></i> <span>Satuan</span> <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i> </span> </a>
+               <ul class="treeview-menu">
+                                <li>
+                                    <a href="https://dird.rsmb.co.id/demoinvetoriapp/satuan"><i class="fa fa-circle-o"></i>Data Satuan</a>
+                                </li>
+<li>
+                                    <a href="https://dird.rsmb.co.id/demoinvetoriapp/add_satuan"><i class="fa fa-circle-o"></i>Tambah Satuan</a>
+                                                  </li>
+                            </ul>
+                        </li>
+                        <!-- satuan end -->
+
+
+                        <li class="treeview">
+                            <a href="https://dird.rsmb.co.id/demoinvetoriapp/index#"> <i class="glyphicon glyphicon-th-list"></i> <span>Barang</span> <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i> </span> </a>
+               <ul class="treeview-menu">
+                                <li>
+                                    <a href="https://dird.rsmb.co.id/demoinvetoriapp/barang"><i class="fa fa-circle-o"></i>Data Barang</a>
+                                </li>
+<li>
+                                    <a href="https://dird.rsmb.co.id/demoinvetoriapp/add_barang"><i class="fa fa-circle-o"></i>Tambah Barang</a>
+                                                  </li>
+
+                            </ul>
+                        </li>
+
+
+                        <li class="treeview">
+                            <a href="https://dird.rsmb.co.id/demoinvetoriapp/add_beli"> <i class="glyphicon glyphicon-log-in"></i> <span>Trx Pembelian</span> <span class="pull-right-container"> </span> </a>
+                                       </li>
+    
+                        <li class="treeview">
+                            <a href="https://dird.rsmb.co.id/demoinvetoriapp/add_jual"> <i class="glyphicon glyphicon-shopping-cart"></i> <span>Trx Penjualan</span> <span class="pull-right-container"> </span> </a>
+
+                        </li>
+
+    
+                        <li class="treeview">
+                            <a href="https://dird.rsmb.co.id/demoinvetoriapp/index#"> <i class=" glyphicon glyphicon-flash"></i> <span>Trx Operasional</span> <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i> </span> </a>
+               <ul class="treeview-menu">
+                                <li>
+                                    <a href="https://dird.rsmb.co.id/demoinvetoriapp/operasional"><i class="fa fa-circle-o"></i>Data Operasional</a>
+                                </li>
+<li>
+                                    <a href="https://dird.rsmb.co.id/demoinvetoriapp/add_operasional"><i class="fa fa-circle-o"></i>Tambah Trx</a>
+                                                  </li>
+
+                            </ul>
+                        </li>
+
+
+
+    <li class="treeview">
+          <a href="https://dird.rsmb.co.id/demoinvetoriapp/index#"> <i class="glyphicon glyphicon-inbox"></i> <span>Stok</span> <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i> </span> </a>
+            <ul class="treeview-menu">
+                <li>
+                    <a href="https://dird.rsmb.co.id/demoinvetoriapp/stok_barang"><i class="fa fa-circle-o"></i>Data Stok</a>
+                  </li>
+                  <li>
+                      <a href="https://dird.rsmb.co.id/demoinvetoriapp/stok_sesuai"><i class="fa fa-circle-o"></i>Penyesuaian Stok</a>
+                    </li>
+                    <li>
+                        <a href="https://dird.rsmb.co.id/demoinvetoriapp/stok_batal"><i class="fa fa-circle-o"></i>Pembatalan Stok</a>
+                      </li>
+
+                </ul>
+              </li>
+
+
+
+
+
+                          <li class="treeview">
+                              <a href="https://dird.rsmb.co.id/demoinvetoriapp/index#"> <i class="glyphicon glyphicon-stats"></i> <span>Laporan</span> <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i> </span> </a>
+                 <ul class="treeview-menu">
+                                  <li>
+                                      <a href="https://dird.rsmb.co.id/demoinvetoriapp/report_trxjual"><i class="fa fa-circle-o"></i>Transaksi Jual</a>
+                                  </li>
+                                  <li>
+                                      <a href="https://dird.rsmb.co.id/demoinvetoriapp/report_trxbeli"><i class="fa fa-circle-o"></i>Transaksi Beli</a>
+                                  </li>
+                                  <li>
+                                      <a href="https://dird.rsmb.co.id/demoinvetoriapp/report_operasi"><i class="fa fa-circle-o"></i>Operasional</a>
+                                  </li>
+                                  <li>
+                                      <a href="https://dird.rsmb.co.id/demoinvetoriapp/report_revenue"><i class="fa fa-circle-o"></i>Pendapatan</a>
+                                  </li>
+                                  <li>
+                                      <a href="https://dird.rsmb.co.id/demoinvetoriapp/report_income"><i class="fa fa-circle-o"></i>Laba</a>
+                                  </li>
+
+                              </ul>
+                          </li>
+
+
+
+  
+
+              <li class="treeview">
+                            <a href="https://dird.rsmb.co.id/demoinvetoriapp/index"> <i class="glyphicon glyphicon-cog"></i> <span>Pengaturan</span> <span class="pull-right-container"> </span> </a>
+                               <ul class="treeview-menu">
+                                <li>
+                                    <a href="https://dird.rsmb.co.id/demoinvetoriapp/set_general"><i class="fa fa-circle-o"></i>General Setting</a>
+                                </li>
+                <li>
+                <a href="https://dird.rsmb.co.id/demoinvetoriapp/set_themes"><i class="fa fa-circle-o"></i>Theme Setting</a>
+                               </li>
+                                <li>
+                                <a href="https://dird.rsmb.co.id/demoinvetoriapp/add_jabatan"><i class="fa fa-circle-o"></i>User Setting</a>
+                                                                   </li>
+                <li>
+                <a href="https://dird.rsmb.co.id/demoinvetoriapp/set_chmod"><i class="fa fa-circle-o"></i>Hak Akses</a>
+                                                  </li>
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                </section><div class="slimScrollBar" style="background: rgba(0, 0, 0, 0.2); width: 3px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px; height: 470.165px;"></div><div class="slimScrollRail" style="width: 3px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+                <!-- /.sidebar -->
+            </aside>
+            <div class="content-wrapper" style="min-height: 559px;">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+</section>
+                <!-- Main content -->
+                <section class="content">
+                    <!-- Small boxes (Stat box) -->
+                    <div class="row">
+                        <!-- ./col -->
+
+<!-- SETTING START-->
+
+
+<!-- SETTING STOP -->
+
+
+<!-- BREADCRUMB -->
+<div class="col-lg-12">
+<ol class="breadcrumb ">
+<li><a href="https://dird.rsmb.co.id/demoinvetoriapp/index#">Dashboard</a></li>
+</ol>
+</div>
+
+<!-- BREADCRUMB -->
+
+
+
+
+                                <!-- /.box-body -->
+
+                        <!-- ./col -->
+
+								</div>
+
+                    <div class="row">
+
+                         <div class="col-lg-3 col-xs-6">
+                           <!-- small box -->
+                           <div class="small-box bg-aqua">
+                               <div class="inner">
+                                   <h3>18</h3>
+                                   <p>Karyawan</p>
+                               </div>
+                               <div class="icon">
+                                   <i class="ion ion-person"></i>
+                               </div>
+                                 <a href="https://dird.rsmb.co.id/demoinvetoriapp/admin" class="small-box-footer">Info lengkap <i class="fa fa-arrow-circle-right"></i></a>
+                           </div>
+                       </div>
+
+                       <div class="col-lg-3 col-xs-6">
+                         <!-- small box -->
+                         <div class="small-box bg-green">
+                             <div class="inner">
+                                 <h3>4</h3>
+                                 <p>Supplier</p>
+                             </div>
+                             <div class="icon">
+                                 <i class="ion ion-person"></i>
+                             </div>
+                               <a href="https://dird.rsmb.co.id/demoinvetoriapp/supplier" class="small-box-footer">Info lengkap <i class="fa fa-arrow-circle-right"></i></a>
+                         </div>
+                     </div>
+
+                     <div class="col-lg-3 col-xs-6">
+                       <!-- small box -->
+                       <div class="small-box bg-yellow">
+                           <div class="inner">
+                               <h3>7</h3>
+                               <p>Kategori</p>
+                           </div>
+                           <div class="icon">
+                               <i class="glyphicon glyphicon-blackboard"></i>
+                           </div>
+                             <a href="https://dird.rsmb.co.id/demoinvetoriapp/kategori" class="small-box-footer">Info lengkap <i class="fa fa-arrow-circle-right"></i></a>
+                       </div>
+                   </div>
+
+                   <div class="col-lg-3 col-xs-6">
+                     <!-- small box -->
+                     <div class="small-box bg-red">
+                         <div class="inner">
+                             <h3>7</h3>
+                             <p>Barang</p>
+                         </div>
+                         <div class="icon">
+                             <i class="glyphicon glyphicon-folder-close"></i>
+                         </div>
+                           <a href="https://dird.rsmb.co.id/demoinvetoriapp/barang" class="small-box-footer">Info lengkap <i class="fa fa-arrow-circle-right"></i></a>
+                     </div>
+                 </div>
+
+                     </div>
+
+								<div class="row">
+																<div class="col-lg-6">
+								 <div class="box box-default">
+            <div class="box-header with-border">
+              <h3 class="box-title">Berita Informasi</h3>
+            </div>
+                                <!-- /.box-header -->
+
+                                <div class="box-body">
+								<div class="table-responsive">
+    <!----------------KONTEN------------------->
+      	<div id="main">
+
+	 <div class="container-fluid">
+
+
+  <form method="post">
+
+
+    <div class="form-group">
+                <ul class="wysihtml5-toolbar" style=""><li class="dropdown">
+  <a class="btn btn-default dropdown-toggle " data-toggle="dropdown">
+    
+      <span class="glyphicon glyphicon-font"></span>
+    
+    <span class="current-font">Normal text</span>
+    <b class="caret"></b>
+  </a>
+  <ul class="dropdown-menu">
+    <li><a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="p" tabindex="-1" href="javascript:;" unselectable="on">Normal text</a></li>
+    <li><a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h1" tabindex="-1" href="javascript:;" unselectable="on">Heading 1</a></li>
+    <li><a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h2" tabindex="-1" href="javascript:;" unselectable="on">Heading 2</a></li>
+    <li><a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h3" tabindex="-1" href="javascript:;" unselectable="on">Heading 3</a></li>
+    <li><a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h4" tabindex="-1" href="javascript:;" unselectable="on">Heading 4</a></li>
+    <li><a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h5" tabindex="-1" href="javascript:;" unselectable="on">Heading 5</a></li>
+    <li><a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h6" tabindex="-1" href="javascript:;" unselectable="on">Heading 6</a></li>
+  </ul>
+</li>
+<li>
+  <div class="btn-group">
+    <a class="btn  btn-default" data-wysihtml5-command="bold" title="CTRL+B" tabindex="-1" href="javascript:;" unselectable="on">Bold</a>
+    <a class="btn  btn-default" data-wysihtml5-command="italic" title="CTRL+I" tabindex="-1" href="javascript:;" unselectable="on">Italic</a>
+    <a class="btn  btn-default" data-wysihtml5-command="underline" title="CTRL+U" tabindex="-1" href="javascript:;" unselectable="on">Underline</a>
+    
+    <a class="btn  btn-default" data-wysihtml5-command="small" title="CTRL+S" tabindex="-1" href="javascript:;" unselectable="on">Small</a>
+    
+  </div>
+</li>
+<li>
+  <a class="btn  btn-default" data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="blockquote" data-wysihtml5-display-format-name="false" tabindex="-1" href="javascript:;" unselectable="on">
+    
+      <span class="glyphicon glyphicon-quote"></span>
+    
+  </a>
+</li>
+<li>
+  <div class="btn-group">
+    <a class="btn  btn-default" data-wysihtml5-command="insertUnorderedList" title="Unordered list" tabindex="-1" href="javascript:;" unselectable="on">
+    
+      <span class="glyphicon glyphicon-list"></span>
+    
+    </a>
+    <a class="btn  btn-default" data-wysihtml5-command="insertOrderedList" title="Ordered list" tabindex="-1" href="javascript:;" unselectable="on">
+    
+      <span class="glyphicon glyphicon-th-list"></span>
+    
+    </a>
+    <a class="btn  btn-default" data-wysihtml5-command="Outdent" title="Outdent" tabindex="-1" href="javascript:;" unselectable="on">
+    
+      <span class="glyphicon glyphicon-indent-right"></span>
+    
+    </a>
+    <a class="btn  btn-default" data-wysihtml5-command="Indent" title="Indent" tabindex="-1" href="javascript:;" unselectable="on">
+    
+      <span class="glyphicon glyphicon-indent-left"></span>
+    
+    </a>
+  </div>
+</li>
+<li>
+  <div class="bootstrap-wysihtml5-insert-link-modal modal fade" data-wysihtml5-dialog="createLink">
+    <div class="modal-dialog ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <a class="close" data-dismiss="modal">×</a>
+          <h3>Insert link</h3>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <input value="http://" class="bootstrap-wysihtml5-insert-link-url form-control" data-wysihtml5-dialog-field="href">
+          </div> 
+          <div class="checkbox">
+            <label> 
+              <input type="checkbox" class="bootstrap-wysihtml5-insert-link-target" checked="">Open link in new window
+            </label>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a class="btn btn-default" data-dismiss="modal" data-wysihtml5-dialog-action="cancel" href="https://dird.rsmb.co.id/demoinvetoriapp/index#">Cancel</a>
+          <a href="https://dird.rsmb.co.id/demoinvetoriapp/index#" class="btn btn-primary" data-dismiss="modal" data-wysihtml5-dialog-action="save">Insert link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="btn  btn-default" data-wysihtml5-command="createLink" title="Insert link" tabindex="-1" href="javascript:;" unselectable="on">
+    
+      <span class="glyphicon glyphicon-share"></span>
+    
+  </a>
+</li>
+<li>
+  <div class="bootstrap-wysihtml5-insert-image-modal modal fade" data-wysihtml5-dialog="insertImage">
+    <div class="modal-dialog ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <a class="close" data-dismiss="modal">×</a>
+          <h3>Insert image</h3>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <input value="http://" class="bootstrap-wysihtml5-insert-image-url form-control" data-wysihtml5-dialog-field="src">
+          </div> 
+        </div>
+        <div class="modal-footer">
+          <a class="btn btn-default" data-dismiss="modal" data-wysihtml5-dialog-action="cancel" href="https://dird.rsmb.co.id/demoinvetoriapp/index#">Cancel</a>
+          <a class="btn btn-primary" data-dismiss="modal" data-wysihtml5-dialog-action="save" href="https://dird.rsmb.co.id/demoinvetoriapp/index#">Insert image</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="btn  btn-default" data-wysihtml5-command="insertImage" title="Insert image" tabindex="-1" href="javascript:;" unselectable="on">
+    
+      <span class="glyphicon glyphicon-picture"></span>
+    
+  </a>
+</li>
+</ul><textarea class="textarea" name="isi" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid rgb(221, 221, 221); padding: 10px; display: none;" value="" placeholder="&lt;p&gt;Yes&lt;/p&gt;"></textarea><input type="hidden" name="_wysihtml5_mode" value="1"><iframe class="wysihtml5-sandbox" security="restricted" allowtransparency="true" frameborder="0" width="0" height="0" marginwidth="0" marginheight="0" style="display: inline-block; background-color: rgb(255, 255, 255); border-collapse: separate; border-color: rgb(221, 221, 221); border-style: solid; border-width: 1px; clear: none; float: none; margin: 0px; outline: rgb(51, 51, 51) none 0px; outline-offset: 0px; padding: 10px; position: static; inset: auto; z-index: auto; vertical-align: baseline; text-align: start; box-sizing: border-box; box-shadow: none; border-radius: 0px; width: 100%; height: 200px;" src="./halaman utama_files/saved_resource.html"></iframe>
+
+            </div>
+
+	</form></div>
+
+    <div class="col-sm-6">
+<br>
+    </div>
+    <div class="col-sm-6" align="right">
+	<button type="submit" class="btn btn-default btn-flat" name="simpan"><span class="glyphicon glyphicon-floppy-disk"></span> Simpan</button>
+<br>
+    </div>
+
+
+
+
+	
+</div>
+
+
+
+	  <!-- KONTEN BODY AKHIR -->
+
+                                </div>
+								</div>
+	<!-- TIMER -->
+<div id="counter" style="display: none;">0</div>
+<script type="text/javascript">
+function countdown() {
+    var i = document.getElementById('counter');
+    if (parseInt(i.innerHTML)<=0) {
+        $('#loading').hide();
+			clearInterval(counter);
+	 resetEverything();
+	 recognition.stop();
+    }
+    i.innerHTML = parseInt(i.innerHTML)-1;
+
+}
+setInterval(function(){ countdown(); },1000);
+</script>
+<!-- /.TIMER -->
+                                <!-- /.box-body -->
+
+									<div class="overlay" id="loading" style="display: none;">  <i class="fa fa-refresh fa-spin"></i></div>
+
+                            </div>
+							</div>
+
+																					      <div class="col-md-6">
+
+							          <!-- Box Comment -->
+          <div class="box box-widget">
+            <div class="box-header with-border">
+              <div class="user-block">
+                <img class="img-circle" src="./halaman utama_files/index.jpg" alt="User Image">
+                <span class="username">Administrator</span>
+                <span class="description">2023-05-31</span>
+              </div>
+              <!-- /.user-block -->
+              <div class="box-tools">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+              </div>
+              <!-- /.box-tools -->
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <!-- post text -->
+              <p>Yes</p>
+            </div>
+            <!-- /.box-body -->
+
+          </div>
+          <!-- /.box -->
+        </div>
+
+
+								</div>
+
+
+                                <!-- /.box-body -->
+                            </section></div>
+
+						<!-- BATAS -->
+                    </div>
+                    <!-- /.row -->
+                    <!-- Main row -->
+                    <div class="row">
+                    </div>
+                    <!-- /.row (main row) -->
+                
+                <!-- /.content -->
+            
+            <!-- /.content-wrapper -->
+                     <footer class="main-footer">
+                <div class="pull-right hidden-xs">
+                    <b>Version</b> 1.2.0
+                </div>
+                <strong>Copyright © 2023 Kategori ID.</strong> All rights
+                reserved. IDX				
+            </footer>
+            <div class="control-sidebar-bg" style="position: fixed; height: auto;"></div>
+        
+              <script src="./halaman utama_files/jquery-2.2.3.min.js.download"></script>
+        <script src="./halaman utama_files/jquery-ui.min.js.download"></script>
+        <script>
+  $.widget.bridge('uibutton', $.ui.button);
+</script>
+        <script src="./halaman utama_files/bootstrap.min.js.download"></script>
+        <script src="./halaman utama_files/raphael-min.js.download"></script>
+        <script src="./halaman utama_files/morris.min.js.download"></script>
+        <script src="./halaman utama_files/jquery.sparkline.min.js.download"></script>
+        <script src="./halaman utama_files/jquery-jvectormap-1.2.2.min.js.download"></script>
+        <script src="./halaman utama_files/jquery-jvectormap-world-mill-en.js.download"></script>
+        <script src="./halaman utama_files/jquery.knob.js.download"></script>
+        <script src="./halaman utama_files/moment.min.js.download"></script>
+        <script src="./halaman utama_files/daterangepicker.js.download"></script>
+        <script src="./halaman utama_files/bootstrap-datepicker.js.download"></script>
+        <script src="./halaman utama_files/bootstrap3-wysihtml5.all.min.js.download"></script>
+        <script src="./halaman utama_files/jquery.slimscroll.min.js.download"></script>
+        <script src="./halaman utama_files/fastclick.js.download"></script>
+        <script src="./halaman utama_files/app.min.js.download"></script>
+        <script src="./halaman utama_files/dashboard.js.download"></script>
+        <script src="./halaman utama_files/demo.js.download"></script>
+		<script src="./halaman utama_files/jquery.dataTables.min.js.download"></script>
+		<script src="./halaman utama_files/dataTables.bootstrap.min.js.download"></script>
+		<script src="./halaman utama_files/jquery.slimscroll.min.js.download"></script>
+		<script src="./halaman utama_files/fastclick.js.download"></script>
+
+    
+
+<div class="jvectormap-label"></div></body></html>
